@@ -1,0 +1,47 @@
+.main {
+	#background{
+		position:fixed;
+		bottom:0;
+		top:0;
+		left:0;
+		right:0;
+		overflow: hidden;
+		z-index:-1;
+
+		background: url('../img/jackAndZu.jpg') center;
+		background-size: cover;
+
+		img{
+		    height: 100%;
+		    width:100%;
+		}
+
+		video{
+		    object-fit: cover;
+		    object-position: center;
+		    height: 100%;
+		    width:100%;
+		    opacity:0;
+			transition: opacity 3s;
+		}
+		&:after{
+			content:"";
+			position:fixed;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			background-color:#090009;
+			opacity:.6;
+		}
+	}
+	.greeting{
+		position:fixed;
+		text-align:center;
+		color:white;
+		font-size:40pt;
+		top:35%;
+		width:100%;
+		font-weight:lighter;
+	}
+}

@@ -1,0 +1,19 @@
+.header {
+	text-align:center;
+	margin-top:15px;
+	.nav{
+		@include vendor(animation-delay, 4s);
+		a{
+			font-size:15pt;
+			margin:0 25px;
+			padding:5px 15px;
+			border:white 1.5px solid;
+			transition: margin .1s, padding .1s;
+		}
+		a:active{
+			padding:3px 10px;
+			margin:2px 30px;
+			transition: margin .4s, padding .4s;
+		}
+	}
+}
