@@ -2,7 +2,7 @@
 	text-align:center;
 	margin-top:15px;
 	.nav{
-		@include vendor(animation-delay, 4s);
+		@include vendor(animation-delay, 2.5s);
 		a{
 			font-size:15pt;
 			margin:0 25px;
